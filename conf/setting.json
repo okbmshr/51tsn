@@ -1,0 +1,14 @@
+{
+  "Krmtcng":[
+    {
+      "module": "krmtconversion",
+      "class": "KrmtConversion"
+    }
+  ],
+  "Krskcng":[
+    {
+      "module": "krskconversion",
+      "class": "KrskConversion"
+    }
+  ]
+}

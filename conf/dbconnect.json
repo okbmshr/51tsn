@@ -1,0 +1,10 @@
+{
+  "DBconnect":
+  {
+    "host": "10.200.234.102",
+    "port": 6023,
+    "database": "tnst15",
+    "user": "nst15usr02",
+    "password": "nst15usr02"
+  }
+}

@@ -1,0 +1,50 @@
+2017-02-23 17:56:36,828 :5640 :14284 :DEBUG   :********************************************
+2017-02-23 17:56:36,828 :5640 :14284 :DEBUG   :Krskcng - started
+2017-02-23 17:56:36,828 :5640 :14284 :DEBUG   :********************************************
+2017-02-23 17:56:36,828 :5640 :14284 :INFO    :krskconversion.py :__init__             :26   : - OK
+2017-02-23 17:56:36,846 :5640 :14284 :INFO    :krskconversion.py :sql_count            :54   : - OK
+2017-02-23 17:56:36,865 :5640 :14284 :INFO    :krskconversion.py :krsk_unregistration_wktable_regist :129  : - OK
+2017-02-23 17:56:36,877 :5640 :14284 :INFO    :krskconversion.py :krskhist_unregistration_wktable_regist :221  : - OK
+2017-02-23 17:56:36,914 :5640 :14284 :INFO    :krskconversion.py :krskcode_conversion  :258  : - OK
+2017-02-23 17:56:36,929 :5640 :14284 :INFO    :krskconversion.py :cngstatus_setting    :285  : - OK
+2017-02-23 17:56:36,930 :5640 :14284 :INFO    :krskconversion.py :hand_selling_preference :325  : - OK
+2017-02-23 17:56:36,962 :5640 :14284 :INFO    :krskconversion.py :krsk_userecord_update :358  : - OK
+2017-02-23 17:56:36,977 :5640 :14284 :INFO    :krskconversion.py :krsk_unregistration_regist :425  : - OK
+2017-02-23 17:56:36,993 :5640 :14284 :INFO    :krskconversion.py :krskhist_unregistration_regist :491  : - OK
+2017-02-23 17:56:37,209 :5640 :14284 :INFO    :krskconversion.py :krsk_unregistration_wktable_delete :507  : - OK
+2017-02-23 17:56:37,209 :5640 :14284 :INFO    :krskconversion.py :krskhist_unregistration_wktable_delete :522  : - OK
+2017-02-23 17:56:37,271 :5640 :14284 :DEBUG   :********************************************
+2017-02-23 17:56:37,271 :5640 :14284 :DEBUG   :Krskcng - Finished
+2017-02-23 17:56:37,271 :5640 :14284 :DEBUG   :********************************************
+2017-02-23 17:59:45,973 :8064 :12684 :DEBUG   :********************************************
+2017-02-23 17:59:45,973 :8064 :12684 :DEBUG   :Krskcng - started
+2017-02-23 17:59:45,973 :8064 :12684 :DEBUG   :********************************************
+2017-02-23 17:59:46,004 :8064 :12684 :INFO    :krskconversion.py :__init__             :26   : - OK
+2017-02-23 17:59:46,051 :8064 :12684 :INFO    :krskconversion.py :sql_count            :56   : - OK
+2017-02-23 17:59:46,066 :8064 :12684 :INFO    :krskconversion.py :krsk_unregistration_wktable_regist :131  : - OK
+2017-02-23 17:59:46,082 :8064 :12684 :INFO    :krskconversion.py :krskhist_unregistration_wktable_regist :223  : - OK
+2017-02-23 17:59:46,097 :8064 :12684 :INFO    :krskconversion.py :krskcode_conversion  :260  : - OK
+2017-02-23 17:59:46,113 :8064 :12684 :INFO    :krskconversion.py :cngstatus_setting    :287  : - OK
+2017-02-23 17:59:46,129 :8064 :12684 :INFO    :krskconversion.py :hand_selling_preference :327  : - OK
+2017-02-23 17:59:46,144 :8064 :12684 :INFO    :krskconversion.py :krsk_userecord_update :360  : - OK
+2017-02-23 17:59:46,160 :8064 :12684 :INFO    :krskconversion.py :krsk_unregistration_regist :427  : - OK
+2017-02-23 17:59:46,160 :8064 :12684 :INFO    :krskconversion.py :krskhist_unregistration_regist :493  : - OK
+2017-02-23 17:59:46,175 :8064 :12684 :INFO    :krskconversion.py :krsk_unregistration_wktable_delete :509  : - OK
+2017-02-23 17:59:46,175 :8064 :12684 :INFO    :krskconversion.py :krskhist_unregistration_wktable_delete :524  : - OK
+2017-02-23 17:59:46,239 :8064 :12684 :DEBUG   :********************************************
+2017-02-23 17:59:46,239 :8064 :12684 :DEBUG   :Krskcng - Finished
+2017-02-23 17:59:46,239 :8064 :12684 :DEBUG   :********************************************
+2017-02-23 18:00:05,667 :13164 :5876 :DEBUG   :********************************************
+2017-02-23 18:00:05,667 :13164 :5876 :DEBUG   :Krskcng - started
+2017-02-23 18:00:05,667 :13164 :5876 :DEBUG   :********************************************
+2017-02-23 18:00:05,667 :13164 :5876 :INFO    :krskconversion.py :__init__             :26   : - OK
+2017-02-23 18:00:05,684 :13164 :5876 :INFO    :krskconversion.py :sql_count            :56   : - OK
+2017-02-23 18:00:05,715 :13164 :5876 :INFO    :krskconversion.py :krsk_unregistration_wktable_regist :131  : - OK
+2017-02-23 18:00:05,731 :13164 :5876 :INFO    :krskconversion.py :krskhist_unregistration_wktable_regist :223  : - OK
+2017-02-23 18:00:05,746 :13164 :5876 :INFO    :krskconversion.py :krskcode_conversion  :260  : - OK
+2017-02-23 18:00:05,762 :13164 :5876 :INFO    :krskconversion.py :cngstatus_setting    :287  : - OK
+2017-02-23 18:00:05,778 :13164 :5876 :INFO    :krskconversion.py :hand_selling_preference :327  : - OK
+2017-02-23 18:00:05,779 :13164 :5876 :INFO    :krskconversion.py :krsk_userecord_update :360  : - OK
+2017-02-23 18:00:05,779 :13164 :5876 :INFO    :krskconversion.py :krsk_unregistration_regist :427  : - OK
+2017-02-23 18:00:05,812 :13164 :5876 :INFO    :krskconversion.py :krskhist_unregistration_regist :493  : - OK
+2017-02-23 18:00:05,952 :13164 :5876 :DEBUG   :Krskcng - Finished
