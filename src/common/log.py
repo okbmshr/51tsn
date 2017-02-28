@@ -16,8 +16,16 @@ class Log(object):
     """ログ出力用クラス"""
 
     def header_create(todaydetail):
+        """ログヘッダー部設定ファイル読み込み"""
+        # logging.basicConfig(filename='test.log',
+        #                     level=logging.INFO,
+        #                     format='%(asctime)s :%(process)d :%(thread)d :%(levelname)s :%(filename)s :%(funcName)s :%(lineno)d :%(message)s')
+
+        #logging.config.fileConfig('../conf/logging_header.conf')
+        #logger = logging.getLogger('header_logger')
         logger = logging.getLogger('header_logger')
         logger.setLevel(logging.DEBUG)
+        #handler = logging.FileHandler(filename = '../log/'+ name + '_' + todaydetail + '.log', mode = 'a+')
         handler = logging.handlers.RotatingFileHandler(filename = '../log/'+ todaydetail + '.log', mode = 'a+', maxBytes=0, backupCount=5, encoding = "UTF-8")
         handler.setLevel(logging.DEBUG)
         formatter = logging.Formatter('%(asctime)-15s :%(message)s')

@@ -16,18 +16,15 @@ class KrmtConversion(Executor):
     """
     PVコードから倉元各社コードに変換
     """
-
     def __init__(self, todaydetail, tr_tablename, logger_body):
         try:
             self.program_id = __name__
             self.processingdate = todaydetail
             self.tr_tablename = tr_tablename
             print (__name__)
-        except:
-            print("SQL:error")
-            logger_body.info(self.program_id)
-            logger_body.info('SQLなし')
-            raise
+        except Exception as e:
+            logger_body.info(str(type(e)))
+            logger_body.info(str(e))
 
     def convert(self, logger_body):
         """
@@ -54,13 +51,9 @@ class KrmtConversion(Executor):
             common.database.Database.truncateDb(self, truncate_sql)
             common.database.Database.commitDb(self)
         except Exception as e:
-            print("SQL:error")
-            print("type:" + str(type(e)))
-            print('args:' + str(e.args))
-            print('message:' + e.message)
-            print('e自身:' + str(e))
             logger_body.info(truncate_sql)
-            raise
+            logger_body.info(str(type(e)))
+            logger_body.info(str(e))
 
     def krmt_unregistration_wktable_regist(self, logger_body):
         """
@@ -126,11 +119,10 @@ class KrmtConversion(Executor):
         try:
             common.database.Database.insertDb(self, sql, placeholder)
             common.database.Database.commitDb(self)
-        except:
-            print("SQL:error")
-            logger_body.info(self.program_id)
-            error_sql = sql % tuple(placeholder)
-            logger_body.info(error_sql)
+        except Exception as e:
+            logger_body.info(sql % tuple(placeholder))
+            logger_body.info(str(type(e)))
+            logger_body.info(str(e))
 
     def krmthist_unregistration_wktable_regist(self, logger_body):
         """
@@ -215,11 +207,10 @@ class KrmtConversion(Executor):
         try:
             common.database.Database.insertDb(self, sql, placeholder)
             common.database.Database.commitDb(self)
-        except:
-            print("SQL:error")
-            logger_body.info(self.program_id)
-            error_sql = sql % tuple(placeholder)
-            logger_body.info(error_sql)
+        except Exception as e:
+            logger_body.info(sql % tuple(placeholder))
+            logger_body.info(str(type(e)))
+            logger_body.info(str(e))
 
     def krmtcode_conversion(self, logger_body):
         """
@@ -249,11 +240,10 @@ class KrmtConversion(Executor):
         try:
             common.database.Database.updateDb(self, sql, placeholder)
             common.database.Database.commitDb(self)
-        except:
-            print("SQL:error")
-            logger_body.info(self.program_id)
-            error_sql = sql % tuple(placeholder)
-            logger_body.info(error_sql)
+        except Exception as e:
+            logger_body.info(sql % tuple(placeholder))
+            logger_body.info(str(type(e)))
+            logger_body.info(str(e))
 
     def cngstatus_setting(self, logger_body):
         """
@@ -273,11 +263,10 @@ class KrmtConversion(Executor):
         try:
             common.database.Database.updateDb(self, sql, placeholder)
             common.database.Database.commitDb(self)
-        except:
-            print("SQL:error")
-            logger_body.info(self.program_id)
-            error_sql = sql % tuple(placeholder)
-            logger_body.info(error_sql)
+        except Exception as e:
+            logger_body.info(sql % tuple(placeholder))
+            logger_body.info(str(type(e)))
+            logger_body.info(str(e))
 
     def krmt_userecord_update(self, logger_body):
         """
@@ -304,11 +293,10 @@ class KrmtConversion(Executor):
         try:
             common.database.Database.updateDb(self, sql, placeholder)
             common.database.Database.commitDb(self)
-        except:
-            print("SQL:error")
-            logger_body.info(self.program_id)
-            error_sql = sql % tuple(placeholder)
-            logger_body.info(error_sql)
+        except Exception as e:
+            logger_body.info(sql % tuple(placeholder))
+            logger_body.info(str(type(e)))
+            logger_body.info(str(e))
 
     def krmt_unregistration_regist(self, logger_body):
         """
@@ -368,11 +356,10 @@ class KrmtConversion(Executor):
         try:
             common.database.Database.insertDb(self, sql, placeholder)
             common.database.Database.commitDb(self)
-        except:
-            print("SQL:error")
-            logger_body.info(self.program_id)
-            error_sql = sql % tuple(placeholder)
-            logger_body.info(error_sql)
+        except Exception as e:
+            logger_body.info(sql % tuple(placeholder))
+            logger_body.info(str(type(e)))
+            logger_body.info(str(e))
 
     def krmthist_unregistration_regist(self, logger_body):
         """
@@ -432,11 +419,10 @@ class KrmtConversion(Executor):
         try:
             common.database.Database.insertDb(self, sql, placeholder)
             common.database.Database.commitDb(self)
-        except:
-            print("SQL:error")
-            logger_body.info(self.program_id)
-            error_sql = sql % tuple(placeholder)
-            logger_body.info(error_sql)
+        except Exception as e:
+            logger_body.info(sql % tuple(placeholder))
+            logger_body.info(str(type(e)))
+            logger_body.info(str(e))
 
     def krmt_unregistration_wktable_delete(self, logger_body):
         """
@@ -446,10 +432,10 @@ class KrmtConversion(Executor):
         try:
             common.database.Database.deleteDb(self, sql)
             common.database.Database.commitDb(self)
-        except:
-            print("SQL:error")
-            logger_body.info(self.program_id)
+        except Exception as e:
             logger_body.info(sql)
+            logger_body.info(str(type(e)))
+            logger_body.info(str(e))
 
     def krmthist_unregistration_wktable_delete(self, logger_body):
         """
@@ -459,10 +445,10 @@ class KrmtConversion(Executor):
         try:
             common.database.Database.deleteDb(self, sql)
             common.database.Database.commitDb(self)
-        except:
-            print("SQL:error")
-            logger_body.info(self.program_id)
+        except Exception as e:
             logger_body.info(sql)
+            logger_body.info(str(type(e)))
+            logger_body.info(str(e))
 
     def krmtcng_usetable_vacuum(self, logger_body):
         """
@@ -474,8 +460,8 @@ class KrmtConversion(Executor):
             common.database.Database.vacuumDb(self, vacuum_tr_table)
             common.database.Database.vacuumDb(self, vacuum_krmtcng)
             common.database.Database.commitDb(self)
-        except:
-            print("SQL:error")
-            logger_body.info(self.program_id)
+        except Exception as e:
             logger_body.info(vacuum_tr_table)
             logger_body.info(vacuum_krskcng)
+            logger_body.info(str(type(e)))
+            logger_body.info(str(e))
